@@ -13,7 +13,10 @@ Methods:
 
 This algorithm has the potential to significantly improve the performance of RL agents by allowing them to adaptively tune the learning rate based on their current policy gradient. Currently testing this algorithm in a simulated environment and real environments and are comparing its results to those of standard RL algorithms.
 
+## Finding the step-size in the Euler Method
+Some might wonder about finding the step size parameter h in the Euler method and this is where a Taylor series expansion with the Lagrange remainder is utilized, the error at each step is bound by the remainder, since a new error $\delta$ is introduced at each step, then a bound must be put x to estimate the error. If there are n steps then n = 1/h, but numerical approximations would likely give a tighter approximation. 
 
+## Adaptability
 To ensure that the algorithm is able to adapt to changes in the underlying environment, we will also incorporate a moving average of the performance metric over time. This will allow the algorithm to adjust the learning rate step-size in response to changing conditions.
 
 Finally, we will use a validation set to test the accuracy of our algorithm and ensure that it is able to adapt to changing conditions in an effective manner. Once this is done, we can evaluate the algorithm's performance and make any necessary adjustments to improve its effectiveness.
