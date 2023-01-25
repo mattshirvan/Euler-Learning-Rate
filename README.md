@@ -11,4 +11,9 @@ Methods:
 3. Adjust the step-size based on the performance of the agent.
 4. Repeat steps 1-3 until the learning rate step-size is optimal.
 
-We believe this algorithm has the potential to significantly improve the performance of RL agents by allowing them to adaptively tune the learning rate based on their current policy gradient. We plan to test this algorithm in a simulated environment and compare its results to those of a standard RL algorithm.
+This algorithm has the potential to significantly improve the performance of RL agents by allowing them to adaptively tune the learning rate based on their current policy gradient. Currently testing this algorithm in a simulated environment and real environments and are comparing its results to those of standard RL algorithms.
+
+
+To ensure that the algorithm is able to adapt to changes in the underlying environment, we will also incorporate a moving average of the performance metric over time. This will allow the algorithm to adjust the learning rate step-size in response to changing conditions.
+
+Finally, we will use a validation set to test the accuracy of our algorithm and ensure that it is able to adapt to changing conditions in an effective manner. Once this is done, we can evaluate the algorithm's performance and make any necessary adjustments to improve its effectiveness.
