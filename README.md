@@ -6,6 +6,8 @@ We propose an algorithm to use Euler's method to find the learning rate step-siz
 
 $y_{n+1} = y_{n} + hf(t_{n},y_{n})$
 
+Where y is the value function (State-Action, State, or Action)
+
 Methods:
 
 1. Calculate the gradient of the policy using the current state-action pairs.
