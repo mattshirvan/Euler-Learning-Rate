@@ -4,7 +4,7 @@ Proposal:
 
 We propose an algorithm to use Euler's method to find the learning rate step-size for an RL agent. The algorithm will use the current gradient information from the agent's policy to determine the optimal learning rate step-size. Specifically, the algorithm will use the current gradient to calculate the step-size, and then the step-size will be adjusted based on the performance of the agent.
 
-$y_{n+1} = y_{n} + hf(t,y_{n})$
+$y_{n+1} = y_{n} + hf(t_{n},y_{n})$
 
 Methods:
 
