@@ -5,7 +5,7 @@ Proposal:
 We propose an algorithm that utilizes Euler's method for autonomous systems to find the step-size parameter for an RL agent's learning rate. The algorithm will utilize the current gradient information from the agent's policy to determine the optimal step-size to control the learning rate. Specifically, the algorithm will utilize the current gradient to calculate the step-size, and then the step-size will be adjusted based on the performance of the agent.
 
 - Backwards Euler Method
-$y_{n+1} = y_{n} + hf(t_{n+1},y_{n+1}) \delta t$
+$y_{n+1} = y_{n} + hf(t_{n+1},y_{n+1}) \del t$
 
 Where y is the value function (State-Action, State, or Action)
 
